@@ -2,8 +2,10 @@
 
 var mysql = require("mysql");
 var connection;
+require('dotenv').config()
 
 if(process.env.JAWSDB_URL) {
+  console.log(process.env.JAWSDB_URL)
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
@@ -24,7 +26,6 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 });
 
-connection.connect();
 // Export connection for ORM use.
 module.exports = connection;
 
