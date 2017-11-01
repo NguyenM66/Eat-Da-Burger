@@ -1,12 +1,12 @@
 body {
 	background: #000 url("../img/cork-wallet.png") center center;
-	/*font-family: 'Anton', sans-serif;*/
+	font-family: 'Anton', sans-serif;
 	text-shadow: 2px 2px 2px #aaa;
 }
 
 .jumbotron-billboard .img {
     margin-bottom: 0px;
-    opacity: 0.5;
+    opacity: 0.6;
     color: #fff;
     background: #000 url("../img/burger.jpg") center center;
     width: 100%;
@@ -21,7 +21,9 @@ body {
 }
 .jumbotron {
 	position:relative;
-	padding:50px;}
+	padding:50px;
+	box-shadow: 10px 10px 20px #aaa;
+}
 .jumbotron .container {
 	z-index:2;
  	position:relative;
@@ -37,4 +39,13 @@ body {
 	overflow-y: scroll;
 }
 
+p {
+	font-size: 20px;
+}
 
+.row {
+    height: 100px;
+}
+.panel {
+    box-shadow: 10px 10px 20px #aaa;
+}
